@@ -1,0 +1,6 @@
+.savehist
+auto-save-list/
+custom.el
+elpa/
+site-lisp/
+var/
