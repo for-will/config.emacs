@@ -35,6 +35,20 @@
 
 ;; Bootstrap config
 
+;; General performance tuning
+(use-package diminish
+  :ensure t)
+
+;; 优化垃圾回收
+(use-package gcmh
+  :ensure t
+  :config
+  (setq gcmh-high-cons-threshold (* 128 1024 1024))
+  :hook
+  (after-init-hook . (lambda ()
+		       (gcmh-mode t)
+		       (diminish 'gcmh-mode))))
+
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (require 'init-utils)
@@ -54,6 +68,10 @@
 (require 'init-beacon)			;; 闪烁显示光标位置
 (require 'init-ivy)			;; ivy
 (require 'init-vertico)			;; 使用vertico的选项自动补全
+
+;; (require 'init-dashboard)		;; 启动页配置
+
+(require 'init-themes)			;; 配色主题
 
 
 ;;; init.el ends here

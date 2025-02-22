@@ -131,7 +131,8 @@
 ;;; 语法高亮等级(最高为4)
 (setq treesit-font-lock-level 4)
 
-(load-theme 'deeper-blue)
+;; (load-theme 'deeper-blue)
+
 
 (provide 'init-options)
 
