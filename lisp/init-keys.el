@@ -20,7 +20,7 @@
   "" nil
   "x" 'execute-extended-command
   "f" 'find-file
-  "b" 'counsel-buffer-or-recentf
+  "b" 'consult-buffer
   "r" 'consult-recent-file
   "q" 'evil-quit
   "s" 'swiper

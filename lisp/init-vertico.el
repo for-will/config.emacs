@@ -4,6 +4,7 @@
 
 ;; Enable vertico
 (use-package vertico
+  :ensure t
   :custom
   ;; (vertico-scroll-margin 0) ;; Different scroll margin
   ;; (vertico-count 20) ;; Show more candidates
@@ -18,10 +19,15 @@
   :init
   (vertico-mode))
 
+
+
 ;; Persist history over Emacs restarts. Vertico sorts by history position.
 (use-package savehist
+  :ensure t
   :init
   (savehist-mode))
+
+
 
 ;; A few more useful configurations...
 (use-package emacs
@@ -49,8 +55,11 @@
         '(read-only t cursor-intangible t face minibuffer-prompt))
   (add-hook 'minibuffer-setup-hook #'cursor-intangible-mode))
 
+
+
 ;; Optionally use the `orderless' completion style.
 (use-package orderless
+  :ensure t
   :custom
   ;; Configure a custom style dispatcher (see the Consult wiki)
   ;; (orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch))
