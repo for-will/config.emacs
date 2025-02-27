@@ -51,6 +51,9 @@
 
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
+
+
+
 (require 'init-utils)
 ;; (require 'init-site-lisp) ;; Must come before elpa, as it may provide
 (require 'init-package)			;; init package
@@ -72,6 +75,8 @@
 ;; (require 'init-dashboard)		;; 启动页配置
 
 (require 'init-themes)			;; 配色主题
+(require 'init-symbol-overlay)		;; 自动高亮与光标下符号相同的所有实例 
+
 
 
 ;;; init.el ends here

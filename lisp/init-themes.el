@@ -43,5 +43,13 @@
 
 
 
+;; 设置高亮显示当前行的颜色
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#3e4446")
+(set-face-foreground 'highlight nil)
+
+
+
+
 (provide 'init-themes)
 ;;; init-themes.el ends here
